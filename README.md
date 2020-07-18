@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## The Ambience Project
 
-You can use the [editor on GitHub](https://github.com/jeajjr/ambience-main/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Ambience is a room environment controller.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The project mainly intends to create a LED light controller, with the user interface
+being a smartphone application. Project evolution includes automation of power
+outlets, which may be used to control fans, heaters and other utilities.
 
-### Markdown
+### Overview
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The project contains three parts with their respective repositories:
 
-```markdown
-Syntax highlighted code block
+![](images/diagram.png)
 
-# Header 1
-## Header 2
-### Header 3
+1. [Android application](https://github.com/jeajjr/ambience-android)
+2. [Hardware project](https://github.com/jeajjr/ambience-hardware)
+3. [ESP8266 python application](https://github.com/jeajjr/ambience-python)
 
-- Bulleted
-- List
+### Functionalities
 
-1. Numbered
-2. List
+Current implementation allows to choose color and light intensity for the RGB LED
+strip.
 
-**Bold** and _Italic_ and `Code` text
+### Future work
 
-[Link](url) and ![Image](src)
-```
+Future functionalities include:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jeajjr/ambience-main/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- Set up timers for turning the light on and off
+- Add external relay board control on Android and python applications
+- Implement some method of authentication should be implemented to avoid agents 
+other than the Ambience Android application to send commands.
